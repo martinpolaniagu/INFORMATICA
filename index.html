@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            width: 70%;
+            min-width: 400px;
+            margin-left:auto;
+            margin-right: auto;
+            display: block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            gap: 10px;
+            grid-template-columns: 33% 67%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "nav nav"
+            "imagen1 imagen1"            
+            "texto1 texto1"
+            "imagen2 imagen2"ss
+            "tabla1 tabla1" 
+            "texto2 texto2";
+        }
+        h2{
+            border-top: black solid 3px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+        }
+        #imagen1{
+            grid-area: imagen1;
+            display: block;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            padding: 10px;
+            border: solid 5px red;
+        }
+        #texto1{
+            grid-area: texto1;
+        }
+        #imagen2{
+            grid-area: imagen2;
+            display: block;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            padding: 10px;
+            border: solid 5px red;
+        }
+        #tabla{
+            grid-area: tabla;
+        }
+        #texto2{
+            grid-area: texto2;
+        }
+        nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Guitarras</h1>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpt-5wQgpgMhG-gisNvGNQrESqKzlE-rc80w&usqp=CAU" alt="guitar" id="imagen1">
+
+    <div id="texto1">
+        <p> La Guitarra es un instrumento musical de la familia de los cordófonos, es decir los instrumentos que producen
+           su sonido al hacer vibrar las cuerdas. Es un instrumento musical de cuerda pulsada, compuesto de una caja de 
+           resonancia, un mástil sobre el que va adosado el diapasón o trastero —generalmente con un agujero acústico 
+           en el centro de la tapa (boca)— y seis cuerdas. Sobre el diapasón van incrustados los trastes, que permiten
+            hacer sonar las diferentes notas. A continuación los tipos de guitarras que existen:</p>
+        <ul>
+            <li>Guitarra Acústica;</li>
+            <li>Guitarra Clasica (o Española);</li>
+            <li>Guitarra Eléctrica;</li>
+            <li>Guitarra Eléctroacústica;</li>
+            <li>Guitarra MIDI;</li>
+            <li>Guitarra Horizontal;</li>
+            <li>Guitarra Horizontal Eléctrica</li> 
+        </ul>
+        <ul>
+          <li><a href="Parte2.html">más</a></li>
+        </ul>
+    </div>
+</body>
+</html> 
