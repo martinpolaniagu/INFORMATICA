@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            width: 70%;
+            min-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            gap: 10px;
+            grid-template-columns: 33% 67%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "nav nav"
+            "imagen1 imagen1"            
+            "texto1 texto1"
+            "imagen2 imagen2"
+            "tabla1 tabla1" 
+            "texto2 texto2";
+        }
+        h2{
+            border-top: black solid 3px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+        }
+        #imagen1{
+            grid-area: imagen1;
+            display: block;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            padding: 10px;
+            border: solid 5px red;
+        }
+        #texto1{
+            grid-area: texto1;
+        }
+        #imagen2{
+            grid-area: imagen2;
+            display: block;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            padding: 10px;
+            border: solid 5px red;
+        }
+        #tabla{
+            grid-area: tabla;
+        }
+        #texto2{
+            grid-area: texto2;
+        }
+        #texto3{
+            grid-area: texto3;
+        }
+        nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <h1>Guitarras Horizontales y MIDI</h1>
+    <img id="imagen1" src="https://i.pinimg.com/originals/16/0c/59/160c5997b5a4779b770d14f2980f3322.jpg" alt="Horizontal">
+    <div id="texto1">
+        <p>Las guitarras MIDI Son guitarras especiales o adaptadores para guitarras convencionales que permiten controlar
+             un sintetizador vía MIDI (protocolo de transmisión de datos que permite enviar información musical entre 
+             distintos dispositivos conectados por medio de cables). De esta manera, un guitarrista que no tiene habilidad
+              para ejecutar un teclado o un órgano electrónico puede dispararlos desde una guitarra MIDI.
+
+            Una técnica básica es la de utilizar un conversor monofónico de frecuencia de audio a MIDI tomando la señal
+             de audio de la guitarra por medio de colocar un micrófono en la boca de la misma o por medio de su salida de audio.
+              También se comercializan puentes más sofisticados que pueden detectar la vibración de cada cuerda por separado
+               de tal forma de poder ejecutar acordes, es decir, que poseen polifonía de 6 voces o simultaneidad de disparo
+                de notas.</p>
+        <p>Las guitarras Horizontales son el tipo más avanzado de la familia de guitarras eléctricas llamadas steel guitars,
+             que utilizan una barra de tonos para pisar las cuerdas (conocida como "steel", de donde viene su nombre),
+              en lugar de los dedos como se hace con una guitarra convencional. El instrumento se coloca horizontalmente,
+              con las cuerdas hacia el guitarrista, y normalmente se toca con una cuña metálica. Los pedales del instrumento
+              se utilizan para cambiar la afinación de sus cuerdas mientras se toca. Su campo de acción puede ser fijo,
+               o puede ser configurable por el guitarrista para seleccionar qué cuerdas se ven afectados por los pedales.
+                Este instrumento es uno de los más característicos instrumentos de la música country.
+
+            La guitarra con pedal se desarrolló a partir de otros tipos de steel guitars, concretamente la table
+             steel guitar evolucionada, a su vez, de la lap steel guitar. Sin embargo, aún basándose en un mismo
+              sistema mecánico de relación pedal-mástil, es mucho más versátil que estas.</p>
+    </div>
+    
+    <img id="imagen2" src="https://images-na.ssl-images-amazon.com/images/I/712bOsB6QbL._AC_SX425_.jpg" alt="MIDI">
+    <div id="texto3">
+        <ul>
+            <li>Para conocer más sobre guitarras clasicas y electroacústicas visite <a href="index.html">este</a> link para volver a la página principal y leer información detallada. Por otro lado, visite <a href="index.html">este</a> link si desea conocer lo básico sobre los tipos de guitarras</li>
+        </ul>  
+    </div>    
+</body>
+</html>
